@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev server</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="header__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="#">Resume</a>
+          </li>
+        </ul>
+        <button aria-label="mobile nav button" class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="mobile-nav__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="#">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
+    <main>
+      <section class="hero container">
+        <img class="hero__img" src="/hero.jpg" alt="Profile picture" />
+        <h2 class="hero__subtitle">Hi, I'm Murugadass 👋</h2>
+        <h1 class="hero__title">
+          FRONT-END <br />
+          WEB DEVELOPER.
+        </h1>
+        <p class="hero__description">
+          A passionate <strong>Frontend / Fullstack</strong> web
+          developer and <strong>UI/UX</strong>
+          enthusiast specialized in building stunning pixel-perfect interactive
+          websites/applications.
+        </p>
+        <a class="hero__btn btn" href="#">Reach out</a>
+      </section>
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">
+            Hello there! I'm Murugadass, a
+            <strong>Frontend / Fullstack</strong> web developer.Electronics and Instrumentation Engineering student with a strong foundation in core concepts and a broad
+            understanding beyond the curriculum. Adept at integrating hardware and software solutions for efficient system
+            performance. Passionate about technology, innovation, and problem-solving in diverse engineering fields. Quick
+            learner with strong analytical and research abilities. Committed to continuous learning and adapting to emerging
+            technologies. Seeking opportunities to apply technical expertise in a dynamic environment.
+          </p>
+          <p class="about__description">
+            
+          </p>
+          <p class="about__description">
+          
+          </p>
+          <hr class="about__hr" />
+          <h3 class="about__subtitle">Technologies</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">JavaScript</li>
+              <li class="about__list">CSS</li>
+              <li class="about__list">HTML</li>
+              <li class="about__list">Figma</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">ReactJS</li>
+              <li class="about__list">NextJS</li>
+              <li class="about__list">Electrical wirings</li>
+              <li class="about__list">Matlab</li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img
+            class="about__img lazy loading"
+            src="https://via.placeholder.com/720"
+            data-src="/about.jpg"
+            alt="Profile picture"
+          />
+        </div>
+      </section>
+      <section id="featured" class="featured container section">
+        <h3 class="featured__subtitle">Featured project</h3>
+        <div class="featured__wrapper">
+          <h2 class="featured__title">Autonomous Underwater Vehicle</h2>
+          <a
+            aria-label="link featured projects"
+            class="featured__link"
+            href="#"
+          >
+            
+          </a>
+        </div>
+        <p class="featured__description">
+          Surveillance and Maintenance Tinkercad
+          Designed and developed an underwater ROV for headrace tunnel inspection and maintenance.
+          Integrated cameras and sonar sensors for real-time surveillance and mapping.
+          Implemented a remote control system with tethered communication for deep-water operation.
+          Developed embedded firmware for motor control, depth sensing, and navigation in constrained environments.
+          Conducted field testing to evaluate performance in varying water conditions and tunnel structures.
+        </p>
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label">Subsystems</h3>
+            <ul class="featured__tech-stack">
+              <li class="featured__info">Electricals</li>
+              <li class="featured__info">software</li>
+              <li class="featured__info">controls</li>
+              <li class="featured__info">Mechanical</li>
+              <li class="featured__info">Communication</li>
+              
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label">Project type</h3>
+            <p class="featured__info">HardWare</p>
+          </div>
+          <div>
+            <h3 class="featured__label">Timeline</h3>
+            <p class="featured__info">April  2025- present</p>
+          </div>
+        </div>
+        
+      <section class="work container section">
+        <h2 class="work__title">Projects</h2>
+        <p class="work__description">
+          Underwater ROV Built for headrace tunnel inspection with sensors, cameras, and real-time control.
+Portfolio Website – Designed and developed a responsive personal portfolio.
+        </p>
+        <div class="work__container">
+          <!-- Project 1 -->
+          <h3 class="work__project-title">Underwater ROV for HRTs</h3>
+          <div class="work__img-wrapper work__image1">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/rov_mini_03.jpg"
+              alt="rov_mini_03"
+            />
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle">Underwater Rov</h3>
+            <p class="work__project-description1">
+              ROVs transform headrace tunnel inspections by avoiding draining, unlike conventional methods that incur expensive downtime. They offer real-time inspection with high-definition cameras and sonar, identifying cracks,sedimentation, and structural flaws while the plant is in operation. 
+            </p>
+            <p class="work__project-description2">
+              Their capability to move through submerged tunnels allows for quicker, safer, and more effective inspections without exposing workers to dangerous underwater conditions. In contrast to manual inspections,which are labor-intensive and time-consuming, ROVs provide accurate, on-invasive inspections with minimal disruption. In spite of challenges such as tethering and poor visibility in dirty water, they are still the best and most advanced option for tunnel maintenance and inspection.
+            </p>
+            <a class="btn work__project-btn" href="#">Read More</a>
+          </div>
+          <!-- Project 2 -->
+          <h3 class="work__project-title">Alive landing Page</h3>
+          <div class="work__img-wrapper work__image2">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/alive.png"
+              alt="alive landing page"
+            />
+          </div>
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">Alive Landing Page</h3>
+            <p class="work__project-description1">
+              This landing page presents a visually striking design with a nature-inspired background of lush green leaves covered in dew, creating a sense of freshness and calm. The central message, "STAY ALIVE," is displayed in bold white typography, with "ALIVE" significantly enlarged to emphasize vitality and resilience. 
+            </p>
+            <p class="work__project-description2">
+              The minimalistic layout draws immediate attention to the text, while the placeholder "LOGO" at the top left maintains a clean, uncluttered aesthetic. The dark, natural tones contrasted with crisp white text create a powerful visual impact. Overall, the page delivers a strong emotional message with simplicity and elegance.
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a>
+          </div>
+          
+          
+        </div>
+      </section>
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Get In Contact</h2>
+        <p class="contact__description">
+          Whether you are starting a project, have business inquiries or just
+          want to say hi, my inbox is always open so feel free to reach out and
+          I will get back to you as soon as possible.
+        </p>
+        <div class="contact-icons">
+        
+
+          <a class="c-icon" href="https://www.linkedin.com/in/murugadass-s-374555257" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="4em" height="4em" viewBox="0 0 50 50">
+                <path d="M25,2C12.318,2,2,12.317,2,25s10.318,23,23,23s23-10.317,23-23S37.682,2,25,2z M18,35h-4V20h4V35z M16,17 
+                c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2s2,0.895,2,2C18,16.105,17.105,17,16,17z M37,35h-4v-5v-2.5c0-1.925-1.575-3.5-3.5-3.5 
+                S26,25.575,26,27.5V35h-4V20h4v1.816C27.168,20.694,28.752,20,30.5,20c3.59,0,6.5,2.91,6.5,6.5V35z"></path>
+            </svg>
+        </a>
+  
+  
+  
+  
+        <a class="c-icon" href="https://www.facebook.com/share/1Y9GQhCKba/" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="4em" height="4em" viewBox="0 0 50 50">
+              <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path>
+          </svg>
+      </a>
+        
+         
+  
+          <a class="c-icon" href="https://github.com/Murugadass26" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="4em" height="4em" viewBox="0 0 30 30">
+                <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
+            </svg>
+        </a>
+         
+            <a class="c-icon" href="https://www.instagram.com/murugadass26?igsh=aGJhNGw1c21kYjZj" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 448 512">
+              <path d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.78-30.78C296.12,124,224,124,224,124s-72.12,0-93.93,6.9a54,54,0,0,0-30.78,30.78C93.33,145.88,93.33,224,93.33,224s0,78.12,6.9,93.93a54,54,0,0,0,30.78,30.78C151.88,361.33,224,361.33,224,361.33s72.12,0,93.93-6.9a54,54,0,0,0,30.78-30.78c6.9-15.81,6.9-93.93,6.9-93.93S355.61,145.88,348.71,161.66ZM224,338.66A82.66,82.66,0,1,1,306.66,256,82.75,82.75,0,0,1,224,338.66Zm85.33-148A19.33,19.33,0,1,1,328.66,171,19.34,19.34,0,0,1,309.33,190.66ZM398.8,80A48,48,0,0,0,368,49.2C346.29,32,306.91,32,224,32S101.71,32,80,49.2A48,48,0,0,0,49.2,80C32,101.71,32,141.09,32,224s0,122.29,17.2,144A48,48,0,0,0,80,398.8C101.71,416,141.09,416,224,416s122.29,0,144-17.2a48,48,0,0,0,30.8-30.8C416,346.29,416,306.91,416,224S416,101.71,398.8,80Zm-48.2,282.49A96.63,96.63,0,0,1,338.49,350a271.27,271.27,0,0,1-57.21,5.49c-27.14,0-54.28,0-81.42,0A271.27,271.27,0,0,1,143.51,350a96.63,96.63,0,0,1-12.11-12.11A96.63,96.63,0,0,1,110,313.49a271.27,271.27,0,0,1-5.49-57.21c0-27.14,0-54.28,0-81.42A271.27,271.27,0,0,1,110,143.51a96.63,96.63,0,0,1,12.11-12.11A96.63,96.63,0,0,1,143.51,110a271.27,271.27,0,0,1,57.21-5.49c27.14,0,54.28,0,81.42,0a271.27,271.27,0,0,1,57.21,5.49,96.63,96.63,0,0,1,12.11,12.11,96.63,96.63,0,0,1,12.11,12.11,271.27,271.27,0,0,1,5.49,57.21c0,27.14,0,54.28,0,81.42A271.27,271.27,0,0,1,385.49,313.49Z"/>
+            </svg>
+            </a>
+  
+  
+          </div>
+        <a
+          class="contact__btn btn"
+          href="mailto:slayingthedragon.io@gmail.com"
+          target="_blank"
+          >React Out</a
+        >
+      </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ Murugadass ☮ ~</h3>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
